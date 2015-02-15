@@ -57,6 +57,14 @@ var charCntStream = stream
                     .map(function(v) { return v.content.length } );
 
 stream.onValue(function(v) { console.log("Original stream: " + JSON.stringify(v)) })
-charCntStream.onValue(function(v) { console.log(v) });
-//stream.map(function(v) { console.log(v); })
 
+charCntStream.onValue(function(v) { console.log("Message length: " + v) });
+
+// A `Property` is BaconJS notion of state derived from an event stream
+// They are generated using the `scan` method, which is analogous to a
+// fold
+var state = charCntStream.scan(0, function(acc, cnt) {
+    return acc + cnt;
+});
+
+state.onValue(function(v) { console.log('Cumulative length: ' + v) });
