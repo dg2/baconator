@@ -1,0 +1,15 @@
+{
+  "name": "baconDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DG2",
+  "license": "ISC",
+  "dependencies": {
+      "baconjs": ">= 0.7",
+      "websocket": "1.0.17"
+  }
+}
