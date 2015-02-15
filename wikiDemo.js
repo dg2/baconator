@@ -2,6 +2,12 @@
  * Using BaconJS to process data from a websocket
  * in NodeJS
  *
+ * References:
+ * 
+ * http://www.scottlogic.com/blog/2014/07/23/frp-with-bacon-and-d3.html
+ * https://baconjs.github.io/api.html#creating-streams
+ * http://blog.carbonfive.com/2014/09/23/bacon-js-node-js-mongodb-functional-reactive-programming-on-the-server/
+ *
  * Dario Garcia, 2015
  */
 
